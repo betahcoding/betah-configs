@@ -2,6 +2,11 @@
   "name": "@betahcoding/ts-config",
   "version": "0.0.0",
   "private": true,
+  "exports": {
+    "./base": "./base.json",
+    "./nextjs": "./nextjs.json",
+    "./reactjs": "./reactjs.json"
+  },
   "license": "MIT",
   "publishConfig": {
     "access": "public"
