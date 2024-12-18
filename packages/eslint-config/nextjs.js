@@ -41,3 +41,5 @@ export const nextJsConfig = [
     },
   },
 ];
+
+export default nextJsConfig;

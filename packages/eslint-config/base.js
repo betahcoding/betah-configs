@@ -15,6 +15,11 @@ export const baseConfig = [
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
   {
+    languageOptions: {
+      globals: {
+        MyGlobal: true,
+      },
+    },
     plugins: {
       import: importPlugin,
       'simple-import-sort': simpleImportSort,
@@ -63,3 +68,5 @@ export const baseConfig = [
     ignores: ['dist/**', 'build/**'],
   },
 ];
+
+export default baseConfig;
