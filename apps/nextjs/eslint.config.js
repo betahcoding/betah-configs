@@ -1,9 +1,7 @@
-import { nextJsConfig } from '@betahcoding/eslint-config/nextjs';
-
-/** @type {import("eslint").Linter.Config} */
-export default [
-  ...nextJsConfig,
-  // Put your own rules and plugins below here.
-
-  { rules: {} },
-];
+import { nextJsConfig } from '@betahcoding/eslint-config';
+/**
+ * A custom ESLint configuration for libraries that use Next.js.
+ *
+ * @type {import("eslint").Linter.Config}
+ * */
+export default [...nextJsConfig];
