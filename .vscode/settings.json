@@ -8,5 +8,6 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-  }
+  },
+  "eslint.validate": ["vue", "html", "javascript", "typescript", "javascriptreact", "typescriptreact"]
 }
