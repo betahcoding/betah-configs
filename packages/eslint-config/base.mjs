@@ -11,7 +11,7 @@ import jseslint from '@eslint/js';
  *
  * @type {import("eslint").Linter.Config}
  * */
-export const baseConfig = [
+export const baseConfig = tseslint.config(
   jseslint.configs.recommended,
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
@@ -33,17 +33,20 @@ export const baseConfig = [
           groups: [
             // `react` first, `next` second, then packages starting with a character
             ['^react$', '^next', '^[a-z]'],
-            // Packages starting with `@`
-            ['^@'],
-            // Packages starting with `~`
-            ['^~'],
-            // Imports starting with `../`
-            ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
-            // Imports starting with `./`
-            ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
-            // Style imports
-            ['^.+\\.s?css$'],
-            // Side effect imports
+            // Node.js builtins prefixed with `node:`.
+            ['^node:'],
+            // Packages.
+            // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+            ['^@?\\w'],
+            // Absolute imports and other imports such as Vue-style `@/foo`.
+            // Anything not matched in another group.
+            ['^'],
+            // Relative imports.
+            // Anything that starts with a dot.
+            ['^./'],
+            // Anything that starts with double dot.
+            ['^../'],
+            // Side effect imports.
             ['^\\u0000'],
           ],
         },
@@ -68,6 +71,6 @@ export const baseConfig = [
   {
     ignores: ['dist/**', 'build/**'],
   },
-];
+);
 
 export default baseConfig;

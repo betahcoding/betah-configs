@@ -1,20 +1,20 @@
 {
   "name": "@betahcoding/eslint-config",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "index.mjs",
   "files": [
-    "index.js",
-    "base.js",
-    "nextjs.js",
-    "reactjs.js",
+    "index.mjs",
+    "base.mjs",
+    "nextjs.mjs",
+    "reactjs.mjs",
     "README.md",
     "LICENSE"
   ],
   "exports": {
-    ".": "./index.js",
-    "./base": "./base.js",
-    "./next": "./nextjs.js",
-    "./react": "./reactjs.js"
+    ".": "./index.mjs",
+    "./base": "./base.mjs",
+    "./next": "./nextjs.mjs",
+    "./react": "./reactjs.mjs"
   },
   "peerDependencies": {
     "eslint": ">= 9",
