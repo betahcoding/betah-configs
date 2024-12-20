@@ -2,7 +2,7 @@
 
 Too lazy to rewrite all the ESLint configuration stuff? So are we!
 
-## What is this ?
+## What is this
 
 This package contains a shareable `Eslint` flat configuration. Currently it is support `React.js` and `Next.js` only.
 
@@ -34,3 +34,32 @@ export default [
 ```
 
 then wait for couple seconds or restart your local `Eslint` server to see the changes.
+
+## Bonus
+
+- If you're a fan of VS Code, you're in luck! Here are some settings that might make your coding life easier.
+- If you already have a settings file, you can simply copy and paste the following settings. Otherwise, you’ll need to create a `settings.json` file under the `.vscode` folder.
+
+```json
+{
+  "eslint.useFlatConfig": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["vue", "html", "javascript", "typescript", "javascriptreact", "typescriptreact"]
+}
+```
+
+- Add this settings into `extentions.json` file might help as well.
+
+```json
+{
+  "recommendations": ["esbenp.prettier-vscode", "firsttris.vscode-jest-runner", "dbaeumer.vscode-eslint"]
+}
+```
