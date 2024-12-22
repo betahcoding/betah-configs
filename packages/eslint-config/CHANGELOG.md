@@ -1,5 +1,11 @@
 # @betahcoding/eslint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- 6c9c61c: Remove private = true from package.json
+
 ## 0.0.3
 
 ### Patch Changes
