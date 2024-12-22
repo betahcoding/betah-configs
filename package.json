@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/betahcoding/betah-configs"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
