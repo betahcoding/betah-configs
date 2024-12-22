@@ -1,5 +1,11 @@
 # @betahcoding/eslint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- a9ad079: Update nextjs config descriptions
+
 ## 0.0.2
 
 ### Patch Changes
