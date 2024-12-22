@@ -7,7 +7,7 @@ import tseslint from 'typescript-eslint';
 import jseslint from '@eslint/js';
 
 /**
- * A shared ESLint configuration for the repository.
+ * A shared flat ESLint configuration for the repository.
  *
  * @type {import("eslint").Linter.Config}
  * */
