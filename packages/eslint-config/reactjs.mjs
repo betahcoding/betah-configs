@@ -1,5 +1,6 @@
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import globals from 'globals';
 
 import { baseConfig } from './base.mjs';
@@ -11,9 +12,11 @@ import { baseConfig } from './base.mjs';
 export const reactJsConfig = [
   ...baseConfig,
   pluginReact.configs.flat.recommended,
+  jsxA11y.flatConfigs.recommended,
   {
     languageOptions: {
       ...pluginReact.configs.flat.recommended.languageOptions,
+      ...jsxA11y.flatConfigs.recommended.languageOptions,
       globals: {
         ...globals.serviceworker,
         ...globals.browser,
