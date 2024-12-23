@@ -2,9 +2,9 @@
   "name": "@betahcoding/ts-config",
   "version": "0.0.1",
   "exports": {
-    "./base": "./base.json",
-    "./nextjs": "./nextjs.json",
-    "./reactjs": "./reactjs.json"
+    "./base.json": "./base.json",
+    "./nextjs.json": "./nextjs.json",
+    "./reactjs.json": "./reactjs.json"
   },
   "license": "MIT",
   "publishConfig": {
