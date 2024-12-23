@@ -10,6 +10,7 @@ This Turborepo includes the following packages/apps:
 ## Apps
 
 - `nextjs`: a [Next.js](https://nextjs.org/) app uses for demonstrating the usage of `@betahcoding/*-config`.
+- `reactjs`: a [Vite](https://vite.dev/) app uses for demonstrating the usage of `@betahcoding/*-config`.
 
 ## Packages
 
