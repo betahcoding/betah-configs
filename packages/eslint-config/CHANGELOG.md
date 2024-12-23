@@ -1,5 +1,11 @@
 # @betahcoding/eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- 14304f6: Update the descriptions
+
 ## 0.0.4
 
 ### Patch Changes
