@@ -1,5 +1,11 @@
 # @betahcoding/eslint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- 404400d: Update package.json file
+
 ## 0.0.6
 
 ### Patch Changes
