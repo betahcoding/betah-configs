@@ -1,5 +1,11 @@
 # @betahcoding/eslint-config
 
+## 0.0.6
+
+### Patch Changes
+
+- edb7107: Add eslint-plugin-jsx-a11y plugins
+
 ## 0.0.5
 
 ### Patch Changes
