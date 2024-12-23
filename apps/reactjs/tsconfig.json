@@ -1,5 +1,5 @@
 {
-  "extends": "@betahcoding/ts-config/reactjs",
+  "extends": "@betahcoding/ts-config/reactjs.json",
   "files": [],
   "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }
